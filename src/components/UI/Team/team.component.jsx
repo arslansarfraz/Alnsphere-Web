@@ -73,21 +73,20 @@ const Team = () => {
   ];
 
   return (
-    <div className="team">
-      <div className="team__header">
-        <div className="header-title">OUR TEAM</div>
-        <div className="header-info nobars">
+    <div className='team'>
+      <div className='team__header'>
+        <div className='header-title'>OUR TEAM</div>
+        <div className='header-info nobars'>
           <p>
             “Special thanks go out to our employees and partners! We are always
             searching for experienced employees in development & art. If you
             believe to fit into our team and provide value we are still hiring.
-            "
+            "<strong>Job applications to job@alnsphere.com. </strong>
           </p>
-          <p>Job applications to job@alnsphere.com. </p>
         </div>
       </div>
-      <div className="team__timeline">
-        <div className="profile-slides-container">
+      <div className='team__timeline'>
+        <div className='profile-slides-container'>
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={50}
@@ -97,7 +96,7 @@ const Team = () => {
               prevEl: navigation_previous.current,
               nextEl: navigation_next.current,
             }}
-            onBeforeInit={(swiper) => {
+            onBeforeInit={swiper => {
               setTimeout(() => {
                 // Override prevEl & nextEl now that refs are defined
                 swiper.params.navigation.prevEl = navigation_previous.current;
@@ -129,28 +128,28 @@ const Team = () => {
               if (item) {
                 return (
                   <SwiperSlide key={index} style={itemStyles}>
-                    <div className="slider-portion">
-                      <div className="preview-box">
-                        <div className="image-container">
-                          <img src={item.image} alt="" srcset="" />
+                    <div className='slider-portion'>
+                      <div className='preview-box'>
+                        <div className='image-container'>
+                          <img src={item.image} alt='' srcset='' />
                         </div>
-                        <div className="name-bar">{item.name}</div>
-                        <div className="designation-bar">
+                        <div className='name-bar'>{item.name}</div>
+                        <div className='designation-bar'>
                           {item.designation}
                         </div>
-                        <div className="seprator-container">
+                        <div className='seprator-container'>
                           <span></span>
                         </div>
                       </div>
-                      <div className="text-description nobars">
+                      <div className='text-description nobars'>
                         <p>{item.description}</p>
                       </div>
-                      <div className="icons-bar nobars">
+                      <div className='icons-bar nobars'>
                         <IKImage
                           path={
                             "/project-folder/icons/discord_JbBdPByYs.svg?updatedAt=1638249766988"
                           }
-                          loading="lazy"
+                          loading='lazy'
                           lqip={{ active: true }}
                         />
                         {/* <IKImage
@@ -185,40 +184,40 @@ const Team = () => {
             })}
           </Swiper>
         </div>
-        <div className="controllers-portion">
-          <div className="controlling-btn">
-            <div className="sliding-btns">
-              <div className="btn-self">
-                <div className="slide-next-btn" ref={navigation_next}>
-                  <div className="target-btn">
+        <div className='controllers-portion'>
+          <div className='controlling-btn'>
+            <div className='sliding-btns'>
+              <div className='btn-self'>
+                <div className='slide-next-btn' ref={navigation_next}>
+                  <div className='target-btn'>
                     <IKImage
                       path={
                         "/project-folder/img/next-icon_b3-R6V3vZmY.svg?updatedAt=1638249552298"
                       }
-                      loading="lazy"
+                      loading='lazy'
                       lqip={{ active: true }}
-                      alt=""
+                      alt=''
                     />
                   </div>
                 </div>
               </div>
-              <div className="btn-self">
-                <div className="slide-prev-btn" ref={navigation_previous}>
-                  <div className="target-btn">
+              <div className='btn-self'>
+                <div className='slide-prev-btn' ref={navigation_previous}>
+                  <div className='target-btn'>
                     <IKImage
                       path={
                         "/project-folder/img/prev-icon_EQdgIsgbW-4.svg?updatedAt=1638249562742"
                       }
-                      loading="lazy"
+                      loading='lazy'
                       lqip={{ active: true }}
-                      alt=""
+                      alt=''
                     />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="pagination-preview nobars" ref={sliderWrapper}>
+          <div className='pagination-preview nobars' ref={sliderWrapper}>
             <>
               {arrayOfTeamMembers.map((item, index) => {
                 console.log(index);

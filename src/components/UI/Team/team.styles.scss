@@ -16,18 +16,14 @@ $val-color: transparent;
   // height: 800px;
 
   &__header {
-    p {
-      text-align: center;
-      line-height: 2;
-    }
     width: 80%;
     max-width: 1500px;
     margin: auto;
-    height: 20rem;
+    // height: 14rem;
     // background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     .header-title {
       margin-left: 8rem;
@@ -38,16 +34,19 @@ $val-color: transparent;
       align-items: center;
       // padding: 0rem 3rem;
       // background: yellow;
-      font-size: 3.2rem;
+      font-size: 4.6rem;
+      font-weight: 700;
+      background: linear-gradient(to left, #8d52f5, #db6dcf);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .header-info {
-      width: 40%;
-      // height: 100%;
-      overflow: scroll;
+      margin-left: 8rem;
+      width: 50%;
+      height: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      justify-content: flex-start;
+      // align-items: center;
       // background: green;
     }
   }
@@ -200,7 +199,7 @@ $val-color: transparent;
       .controlling-btn {
         width: 100%;
         max-width: 68rem;
-        height: 20%;
+        // height: 20%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -210,14 +209,15 @@ $val-color: transparent;
           height: 100%;
           // background: red;
           display: flex;
-          flex-direction: column;
+          flex-direction: row-reverse;
           align-items: flex-end;
 
           .btn-self {
             width: 40px;
             height: 51px;
+            display: inline-block;
             position: relative;
-            margin: 1rem 2rem;
+            margin-right: 3rem;
             border-radius: 50%;
             transition: box-shadow 200ms ease-in-out;
             .slide-next-btn,

@@ -18,8 +18,10 @@
   align-items: center;
   justify-content: center;
   &__desc {
-    line-height: 2;
-    margin-bottom: 1rem;
+    line-height: 1.5;
+    // margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.08);
   }
   &__content {
     font-size: 2rem;
