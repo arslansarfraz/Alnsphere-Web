@@ -57,11 +57,11 @@ const Team = () => {
       description: "In love with details. Addicted to improvement.",
     },
     {
-      name: "Tom Oxford",
+      name: "Tom Müller",
       image:
         "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/5_Ld9AjQBxh.png?updatedAt=1638350228764",
       designation: "Graphics & Illustration",
-      description: `Has worked for high-profile companies like Starbucks, Warner Bros, and others.`,
+      description: `Has worked for high-profile companies before and is a master at his craft`,
     },
     {
       name: "Matheo Veulner",
@@ -78,11 +78,12 @@ const Team = () => {
         <div className="header-title">OUR TEAM</div>
         <div className="header-info nobars">
           <p>
-            “Special thanks goes out to our employees and partners! We are
-            always searching for experienced employees in development If you
-            believe to fit into our team and provide value we are still hiring."
+            “Special thanks go out to our employees and partners! We are always
+            searching for experienced employees in development & art. If you
+            believe to fit into our team and provide value we are still hiring.
+            "
           </p>
-          <p>Job applications to: job@alnsphere.com</p>
+          <p>Job applications to job@alnsphere.com. </p>
         </div>
       </div>
       <div className="team__timeline">

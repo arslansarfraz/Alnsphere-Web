@@ -82,9 +82,10 @@ const Play = () => {
             <b>quests</b>, fighting in <b>dungeons</b>, challenging players in{" "}
             <b>PvP</b> and climbing the leader board, collecting rare{" "}
             <b>items</b>, joining <b>guilds</b>, and winning <b>tournaments</b>{" "}
-            containing huge prize pools! Collect <b>$Sphererocks</b> along the
-            way and make us of them in <b>The Grand Hall</b>. Enjoy a thrilling
-            gameplay experience and use your special ability to your advantage.
+            containing huge prize pools! <br /> Collect <b>$Sphererocks</b>{" "}
+            along the way and make us of them in <b>The Grand Hall</b>. Enjoy a
+            thrilling gameplay experience and use your special ability to your
+            advantage.
           </p>
         </div>
       </div>

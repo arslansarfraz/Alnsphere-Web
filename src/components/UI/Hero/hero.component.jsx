@@ -5,12 +5,13 @@ import "./ImageFadeMaterial";
 import "./hero.styles.scss";
 import { IKImage } from "imagekitio-react";
 import * as THREE from "three";
+import img from "../../../assets/images/WithoutPaused.png";
 
 function FadingImage() {
   const ref = useRef();
   const [texture1, texture2, dispTexture] = useLoader(THREE.TextureLoader, [
     "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/back-min_iHuWQIZZ8.png?updatedAt=1638350241601",
-    "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/NFT_Proyect_Illustration_2__1440x900__v2_diIesqYsu.jpg?updatedAt=1638350837437",
+    img,
     "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/disp-min_zbIdLo0CQ.jpg?updatedAt=1638350257474",
   ]);
   const [hovered, setHover] = useState(false);
@@ -192,11 +193,7 @@ export default function HeroFadeImg() {
         ></img>
       </div>
 
-      <h1 className="Typewriter" ref={typewriterRef}>
-        <span class="glitch" data-text="Error">
-          Error
-        </span>
-      </h1>
+      <h1 className="Typewriter" ref={typewriterRef}></h1>
 
       <div className="button">
         <CustomButton
