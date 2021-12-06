@@ -148,6 +148,13 @@ const Team = () => {
                       <div className="icons-bar nobars">
                         <IKImage
                           path={
+                            "/project-folder/icons/discord_JbBdPByYs.svg?updatedAt=1638249766988"
+                          }
+                          loading="lazy"
+                          lqip={{ active: true }}
+                        />
+                        {/* <IKImage
+                          path={
                             "/project-folder/icons/phone_ml5J8yb8f.svg?updatedAt=1638249769906"
                           }
                           loading="lazy"
@@ -166,7 +173,7 @@ const Team = () => {
                           }
                           loading="lazy"
                           lqip={{ active: true }}
-                        />
+                        /> */}
                         {/* <img src={phone_svg} alt="" srcset="" />
                         <img src={mail_svg} alt="" srcset="" />
                         <img src={linkedIn_svg} alt="" srcset="" /> */}

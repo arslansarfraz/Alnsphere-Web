@@ -35,6 +35,10 @@ const CustomButton = ({
           href={link}
           target={target}
           onClick={onClick}
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+          }}
         >
           {imageIcon && (
             <IKImage

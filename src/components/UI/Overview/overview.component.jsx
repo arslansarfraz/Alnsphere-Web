@@ -2,6 +2,7 @@ import React from "react";
 import "./overview.styles.scss";
 import CustomButton from "../../Buttons/CustomButton/custombutton.component";
 import { IKImage } from "imagekitio-react";
+import pdf from "../../../assets/pdf/Attachment_1638359682_compressed.pdf";
 
 import PSDFixedWhiteBackground from "assets/images/PSDFixedWhiteBackground.png";
 
@@ -31,6 +32,7 @@ const Overview = () => {
           </div>
           <div className="overview__buttons">
             <CustomButton
+              link="https://discord.com/invite/YgeEwVa6Yn"
               imageIcon={
                 "/project-folder/icons/discord_JbBdPByYs.svg?updatedAt=1638249766988"
               }
@@ -38,7 +40,9 @@ const Overview = () => {
               Join Discord
             </CustomButton>
 
-            <CustomButton accent>WhitePaper</CustomButton>
+            <CustomButton link={pdf} accent>
+              WhitePaper
+            </CustomButton>
           </div>
         </div>
         <div className="overview__right">
@@ -53,7 +57,7 @@ const Overview = () => {
           <h2 className="mOverview__heading">
             WELCOME TO
             <br />
-            <span className="mOverview__heading--accent">ALNSPHERE!</span>
+            <span className="mOverview__heading--accent">ALNSPHERE</span>
           </h2>
           <p className="mOverview__desc">
             Since the Alns have been created on planet Spheron, the Spheroxy

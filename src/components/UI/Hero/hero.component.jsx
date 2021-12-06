@@ -184,13 +184,13 @@ export default function HeroFadeImg() {
           <div class="shooting_star"></div>
         </div> */}
 
-        <img
+        {/* <img
           className="ainsphere-text"
           src={
             "https://ik.imagekit.io/pgtkpta0mpcw/project-folder/compressed/AlNSText-min_RntFmIcJ4.png?updatedAt=1638350234656"
           }
           alt="AINSPHERE"
-        ></img>
+        ></img> */}
       </div>
 
       <h1 className="Typewriter" ref={typewriterRef}></h1>

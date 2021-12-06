@@ -14,6 +14,7 @@ const CTA = () => {
         </p>
         <div className="cta__btn">
           <CustomButton
+            link="https://discord.com/invite/YgeEwVa6Yn"
             imageIcon={
               "/project-folder/icons/discord_JbBdPByYs.svg?updatedAt=1638249766988"
             }

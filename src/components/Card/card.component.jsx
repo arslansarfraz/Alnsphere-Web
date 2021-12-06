@@ -25,14 +25,14 @@ const Card = ({ expansion, text_content, card_number, title, noTitle }) => {
       data-aos="fade-left"
       data-aos-duration="800"
     >
-      <div className="card__header">
+      <div className="card__header" onClick={handleCardExpansion}>
         {!noTitle ? (
           <div className="card__title">
             {card_number ? `Stage ${card_number}` : `${title}`}
           </div>
         ) : null}
         {expansion && (
-          <div className="sec-card__exapansion" onClick={handleCardExpansion}>
+          <div className="sec-card__exapansion">
             {/* <img
               src={template__toggler}
               alt=""
